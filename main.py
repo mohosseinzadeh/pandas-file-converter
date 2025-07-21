@@ -42,15 +42,11 @@ def convert_file(
     else:
         raise ValueError(f"Unsupported output format: {output_format}")
 
-    print(
-        f"File converted from {input_format} to {output_format} and saved to {output_file}"
-    )
+    print(f"File converted from {input_format} to {output_format} and saved to {output_file}")
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Convert data files between CSV, Excel, JSON, and SQL formats."
-    )
+    parser = argparse.ArgumentParser(description="Convert data files between CSV, Excel, JSON, and SQL formats.")
     parser.add_argument("input_file", help="Path to the input file")
     parser.add_argument("output_file", help="Path to the output file")
     parser.add_argument(
@@ -78,5 +74,5 @@ def main():
     )
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#    main()
